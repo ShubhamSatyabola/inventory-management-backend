@@ -20,7 +20,7 @@ exports.createProduct = async (req, res) => {
 exports.fetchProduct = async (req, res) => {
   try {
     const components = await Component.find();
-    console.log(components);
+    // console.log(components);
     res.status(200).json(components);
   } catch (error) {
     console.log(error);

@@ -2,7 +2,7 @@ const {User} = require('../models/userModel');
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
-//function to generate Token for authorization
+//function to generate Token for authorization.
 function generateToken(id) {
   return jwt.sign({ userId: id }, process.env.Token);
 }
